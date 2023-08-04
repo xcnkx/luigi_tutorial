@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "luigi-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["cris <c.kamia@cartahd.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+luigi = "^3.3.0"
+sqlalchemy = "1.4.49"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

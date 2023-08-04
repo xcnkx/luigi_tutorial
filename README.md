@@ -23,6 +23,17 @@ Next, run task in other terminal.
 make run/task
 ```
 
+## View luigi task web UI
+```bash
+open http://localhost:8082
+```
+
+## View luigi task history
+```bash
+open http://localhost:8082/history
+```
+
+
 ## References
 - [Luigi official docs](https://luigi.readthedocs.io/en/stable/)
 - https://dataimpact.medium.com/how-to-create-etl-in-luigi-9d2eb4001db1

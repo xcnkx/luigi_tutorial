@@ -10,6 +10,7 @@ packages = [{include = "app"}]
 python = "^3.10"
 luigi = "^3.3.0"
 sqlalchemy = "1.4.49"
+psycopg2-binary = "^2.9.7"
 
 
 [build-system]

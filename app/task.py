@@ -1,5 +1,5 @@
 from luigi import LocalTarget, Task
-
+import time
 
 class ProcessOrder(Task):
     def output(self):
@@ -28,6 +28,10 @@ class GenerateReport(Task):
                 report[month] += float(amount)
             else:
                 report[month] = float(amount)
+        # wait 5 minutes
+        print("wait 5 minutes...")
+        time.sleep(300)
+        print("done waiting")
 
         with self.output().open('w') as out:
             for month in report:

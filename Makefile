@@ -4,7 +4,7 @@ setup:
 	poetry install
 
 run/task:
-	poetry run luigi --module app.task GenerateReport --scheduler-host localhost --scheduler-port 8082
+	poetry run luigi --module app.task GenerateReport --scheduler-host luigid-bg-test.ada.zucksdevelopers.vg --scheduler-port 80
 
 run/luigid:
 	poetry run luigid
